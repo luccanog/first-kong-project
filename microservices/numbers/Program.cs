@@ -12,7 +12,7 @@ var random = new Random();
 
 app.MapGet("/random-number", () =>
 {
-    return random.Next();
+    return random.Next(0,1000);
 });
 
 app.Run();
