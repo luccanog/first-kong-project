@@ -4,16 +4,16 @@ services:
         container_name: Numbers
         build: 
             context: ./numbers
-            dockerfile: dockerfile
+            dockerfile: Dockerfile
         ports: 
           - "7001:7001"
     wordsservice:
         container_name: Words
         build: 
             context: ./words
-            dockerfile: dockerfile
+            dockerfile: Dockerfile
         ports: 
           - "7002:7002"
 networks: 
   default:
-    name: kong-comic-net
+    name: kong-net
