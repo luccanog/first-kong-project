@@ -1,13 +1,13 @@
 version: '3.7'
 services: 
-    dcservice:
+    numbersservice:
         container_name: Numbers
         build: 
             context: ./numbers
             dockerfile: dockerfile
         ports: 
           - "7001:7001"
-    marvelservice:
+    wordsservice:
         container_name: Words
         build: 
             context: ./words
